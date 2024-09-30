@@ -1,1 +1,1 @@
-# DivineProportionConsole
+# Божественная пропорция в Console 
