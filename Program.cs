@@ -19,7 +19,7 @@ namespace DivineProportionConsole
          int s = (int)x.Average();
          Console.WriteLine(s);
 
-         // Если меньше этого знчения среднее
+         // Если меньше этого значения среднее
          int fihalfdata = (int)(data * Fihalf);
          Console.WriteLine(fihalfdata);
 
