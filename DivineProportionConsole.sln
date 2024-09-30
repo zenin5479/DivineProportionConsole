@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivineProportionConsole", "DivineProportionConsole.csproj", "{89BBD821-8452-4378-9021-578ED70D9884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89BBD821-8452-4378-9021-578ED70D9884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BBD821-8452-4378-9021-578ED70D9884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BBD821-8452-4378-9021-578ED70D9884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BBD821-8452-4378-9021-578ED70D9884}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F85A58C-40E5-42DC-8B9B-0CD2F20A2F1E}
+	EndGlobalSection
+EndGlobal
