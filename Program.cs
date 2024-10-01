@@ -38,10 +38,7 @@ namespace DivineProportionConsole
       public static int GetPercent(int b, int a)
       {
          if (b == 0) return 0;
-         int r = (int)(a / (b / 100M));
-         return r;
-
+         return (int)(a / (b / 100M));
       }
-
    }
 }
