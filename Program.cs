@@ -30,7 +30,18 @@ namespace DivineProportionConsole
          int result = Convert.ToInt32(data - datafipercent);
          Console.WriteLine(result);
 
+         Console.WriteLine(GetPercent(data, s));
+
          Console.ReadKey();
       }
+
+      public static int GetPercent(int b, int a)
+      {
+         if (b != 0)
+            return (int)(a / (b / 100M));
+
+         return 0;
+      }
+
    }
 }
