@@ -4,14 +4,13 @@ namespace DivineProportionConsole
 {
    internal class Program
    {
-      // Божественная пропорция
-      public const double Fi = 1.618033988749895;
-      public const double Fihalf = 0.809016994374947;
+      public const double F = 10;
+      public const double Fhalf = 0.81;
 
       static void Main()
       {
-         Console.WriteLine(Fi);
-         Console.WriteLine(Fihalf);
+         Console.WriteLine(F);
+         Console.WriteLine(Fhalf);
 
          int data = 300;
          double[] x = { 100.36, 150.67, 170.96, 250.85, 30.52, 280.24, 190.12, 87.32, 96.14, 200.89 };
@@ -20,11 +19,11 @@ namespace DivineProportionConsole
          Console.WriteLine(s);
 
          // Если меньше этого значения среднее
-         int fihalfdata = (int)(data * Fihalf);
-         Console.WriteLine(fihalfdata);
+         int fhalfdata = (int)(data * Fhalf);
+         Console.WriteLine(fhalfdata);
 
          // Тогда уменьшаем заданное значение на процент
-         int datafipercent = (int)(data * (Fi / 10));
+         int datafipercent = (int)(data * (F / 100));
          Console.WriteLine(datafipercent);
 
          int result = Convert.ToInt32(data - datafipercent);
