@@ -5,12 +5,12 @@ namespace DivineProportionConsole
    internal class Program
    {
       public const double F = 10;
-      public const double Fhalf = 0.81;
+      public const double Fpart = 0.81;
 
       static void Main()
       {
          Console.WriteLine(F);
-         Console.WriteLine(Fhalf);
+         Console.WriteLine(Fpart);
 
          int data = 300;
          double[] x = { 100.36, 150.67, 170.96, 250.85, 30.52, 280.24, 190.12, 87.32, 96.14, 200.89 };
@@ -19,7 +19,7 @@ namespace DivineProportionConsole
          Console.WriteLine(s);
 
          // Если меньше этого значения среднее
-         int fhalfdata = (int)(data * Fhalf);
+         int fhalfdata = (int)(data * Fpart);
          Console.WriteLine(fhalfdata);
 
          // Тогда уменьшаем заданное значение на процент
@@ -29,8 +29,8 @@ namespace DivineProportionConsole
          int result = Convert.ToInt32(data - datafipercent);
          Console.WriteLine(result);
 
-         Console.WriteLine(GetPercent(data, s));
-
+         Console.WriteLine(HowPercentIsNumber(data, s));
+         Console.WriteLine(FindPercentOfNumber(data, F));
          Console.ReadKey();
       }
 
@@ -43,10 +43,15 @@ namespace DivineProportionConsole
          return average;
       }
 
-      public static int GetPercent(int b, double a)
+      public static int HowPercentIsNumber(int b, double a)
       {
          if (b == 0) return 0;
          return (int)(a / (double)(b / 100M));
+      }
+
+      public static int FindPercentOfNumber(int data, double a)
+      {
+         return (int)(data * (a / 100));
       }
    }
 }
