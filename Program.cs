@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace DivineProportionConsole
 {
@@ -17,10 +16,7 @@ namespace DivineProportionConsole
          int data = 300;
          double[] x = { 100.36, 150.67, 170.96, 250.85, 30.52, 280.24, 190.12, 87.32, 96.14, 200.89 };
 
-         double sr = AverageForeachLoop(x);
-         Console.WriteLine(sr);
-
-         double s = x.Average();
+         double s = AverageForeachLoop(x);
          Console.WriteLine(s);
 
          // Если меньше этого значения среднее
