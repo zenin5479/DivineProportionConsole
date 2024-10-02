@@ -15,7 +15,11 @@ namespace DivineProportionConsole
          Console.WriteLine(Fihalf);
 
          int data = 300;
-         double[] x = { 100, 150, 170, 250, 30, 280, 190, 87, 96, 200 };
+         int[] x = { 100, 150, 170, 250, 30, 280, 190, 87, 96, 200 };
+
+         int sr = ForeachLoop(x);
+         Console.WriteLine(sr);
+
          int s = (int)x.Average();
          Console.WriteLine(s);
 
@@ -33,6 +37,17 @@ namespace DivineProportionConsole
          Console.WriteLine(GetPercent(data, s));
 
          Console.ReadKey();
+      }
+
+      public static int ForeachLoop(int[] sourceArray)
+      {
+         int result = 0;
+
+         foreach (int item in sourceArray)
+            result += item;
+         int average = result/sourceArray.Length;
+
+         return average;
       }
 
       public static int GetPercent(int b, int a)
