@@ -5,12 +5,10 @@ namespace DivineProportionConsole
    internal class Program
    {
       public const double Percent = 10;
-      public const double PercentPart = 0.81;
 
       static void Main()
       {
          Console.WriteLine(Percent);
-         Console.WriteLine(PercentPart);
 
          int data = 300;
          double[] x = { 100.36, 150.67, 170.96, 250.85, 30.52, 280.24, 190.12, 87.32, 96.14, 200.89 };
@@ -19,7 +17,7 @@ namespace DivineProportionConsole
          Console.WriteLine(s);
 
          // Если меньше этого значения среднее
-         int fhalfdata = (int)(data * PercentPart);
+         int fhalfdata = (int)(data * (1 - (Percent / 100)));
          Console.WriteLine(fhalfdata);
 
          // Тогда уменьшаем заданное значение на процент
