@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace DivineProportionConsole
 {
@@ -15,6 +16,7 @@ namespace DivineProportionConsole
 
          double s = AverageForeachLoop(x);
          Console.WriteLine(s);
+
 
          // Если меньше этого значения среднее
          int halfdata = (int)(data * (1 - (Percent / 100)));
