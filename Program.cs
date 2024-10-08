@@ -17,14 +17,14 @@ namespace DivineProportionConsole
          Console.WriteLine(s);
 
          // Если меньше этого значения среднее
-         int fhalfdata = (int)(data * (1 - (Percent / 100)));
-         Console.WriteLine(fhalfdata);
+         int halfdata = (int)(data * (1 - (Percent / 100)));
+         Console.WriteLine(halfdata);
 
          // Тогда уменьшаем заданное значение на процент
-         int datafipercent = (int)(data * (Percent / 100));
-         Console.WriteLine(datafipercent);
+         int datapercent = (int)(data * (Percent / 100));
+         Console.WriteLine(datapercent);
 
-         int result = Convert.ToInt32(data - datafipercent);
+         int result = Convert.ToInt32(data - datapercent);
          Console.WriteLine(result);
 
          Console.WriteLine(HowPercentIsNumber(data, s));
