@@ -32,6 +32,7 @@ namespace DivineProportionConsole
          Console.ReadKey();
       }
 
+      // Cреднее значение для последовательности числовых значений через цикл foreach
       private static double AverageForeachLoop(double[] dataArray)
       {
          double result = 0;
@@ -41,12 +42,14 @@ namespace DivineProportionConsole
          return average;
       }
 
+      // Сколько процентов составляет одно число от другого числа
       private static int HowPercentIsNumber(int b, double a)
       {
          if (b == 0) return 0;
          return (int)(a / (double)(b / 100M));
       }
 
+      // Найти процент от числа
       private static int FindPercentOfNumber(int data, double a)
       {
          return (int)(data * (a / 100));
