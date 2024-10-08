@@ -32,22 +32,22 @@ namespace DivineProportionConsole
          Console.ReadKey();
       }
 
-      public static double AverageForeachLoop(double[] sourceArray)
+      private static double AverageForeachLoop(double[] dataArray)
       {
          double result = 0;
-         foreach (double item in sourceArray)
+         foreach (double item in dataArray)
             result += item;
-         double average = result / sourceArray.Length;
+         double average = result / dataArray.Length;
          return average;
       }
 
-      public static int HowPercentIsNumber(int b, double a)
+      private static int HowPercentIsNumber(int b, double a)
       {
          if (b == 0) return 0;
          return (int)(a / (double)(b / 100M));
       }
 
-      public static int FindPercentOfNumber(int data, double a)
+      private static int FindPercentOfNumber(int data, double a)
       {
          return (int)(data * (a / 100));
       }
