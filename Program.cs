@@ -4,7 +4,7 @@ namespace DivineProportionConsole
 {
    internal class Program
    {
-      public const double Percent = 10;
+      private const double Percent = 10;
 
       static void Main()
       {
